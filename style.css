@@ -1,0 +1,39 @@
+body {
+text-align: center;
+background-color: black;
+color: white;
+font-family: courier new;
+}
+
+#paper{
+border: 2px solid grey;
+width: 650px;
+height: 600px;
+font-size: 20px;
+border-radius: 100px;
+overflow: hidden;
+font-family: courier new;
+color: white;
+background color: black;
+padding-top: 25px;
+}
+
+button {
+border-radius: 30px;
+color: white;
+background-color: black;
+height: 50px;
+width: 50px;
+font-family: courier new;
+}
+
+
+.keyboard {
+padding-top: 25px;
+border: 2px solid gray;
+height: 250px;
+width: 650px;
+border-radius: 50px;
+}
+
+
