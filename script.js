@@ -1,18 +1,3 @@
-//function new_character () {
-//}
-//function new_scene_and_shot () {
-//}
-//function new_log_past_version () {
-//}
-//function new_action () {
-//}
-//function new_dialouge () {
-//}
-//function new_general () {
-//}
-
-
-
 function backspace() {
         let paper =  document.getElementById("paper");
         let length = paper.innerHTML.length;
@@ -145,3 +130,22 @@ else if ( event.key == "Backspace" ) {
   paper.innerHTML = paper.innerHTML.substr(0, length-1);
   }
 });
+
+
+
+
+
+save()
+clear()
+bold()
+    italic()
+underline()
+    strikethrough()
+ uppercase()
+lowercase()
+titlecase()
+ increaseFontSize()
+decreaseFontSize()
+leftAlign()
+centerAlign()
+leftAlign()
