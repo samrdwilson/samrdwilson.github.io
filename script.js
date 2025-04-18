@@ -144,3 +144,4 @@ else if ( event.key == "Backspace" ) {
         let length = paper.innerHTML.length;
         paper.innerHTML = paper.innerHTML.substr(0, length-1);
 }
+}
