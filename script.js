@@ -131,7 +131,7 @@ function m() {
 }
 
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function(event)) {
 let paper = document.getElementById("paper");
 if (event.key.length == 1) {
   paper.innerHTML += event.key;
