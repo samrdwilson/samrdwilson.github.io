@@ -130,9 +130,6 @@ function m() {
         document.getElementById("paper").innerHTML += "m";
 }
 
-function enter() {
-        document.getElementById("paper").innerHTML += "<br>";
-}
 
 document.addEventListener('keydown', function(event) {
 let paper = document.getElementById("paper");
