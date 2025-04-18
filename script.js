@@ -1,16 +1,15 @@
-
-function new_character () {
-}
-function new_scene_and_shot () {
-}
-function new_log_past_version () {
-}
-function new_action () {
-}
-function new_dialouge () {
-}
-function new_general () {
-}
+//function new_character () {
+//}
+//function new_scene_and_shot () {
+//}
+//function new_log_past_version () {
+//}
+//function new_action () {
+//}
+//function new_dialouge () {
+//}
+//function new_general () {
+//}
 
 
 
