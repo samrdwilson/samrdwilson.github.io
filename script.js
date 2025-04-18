@@ -135,13 +135,13 @@ document.addEventListener('keydown', function(event) {
 let paper = document.getElementById("paper");
 if (event.key.length == 1) {
   paper.innerHTML += event.key;
-}
+  }
 else if ( event.key == "Enter" ) {
   paper.innerHTML += "<br>";
-}
+  }
 else if ( event.key == "Backspace" ) {
- let paper =  document.getElementById("paper");
-        let length = paper.innerHTML.length;
-        paper.innerHTML = paper.innerHTML.substr(0, length-1);
-}
+  let paper =  document.getElementById("paper");
+  let length = paper.innerHTML.length;
+  paper.innerHTML = paper.innerHTML.substr(0, length-1);
+  }
 }
