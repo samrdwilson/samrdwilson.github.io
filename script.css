@@ -6,6 +6,7 @@ font-family: courier new;
 }
 
 #paper {
+text-align: center;
 border: 2px solid grey;
 width: 650px;
 height: 600px;
@@ -29,6 +30,16 @@ font-family: courier new;
 
 
 .keyboard {
+text-align: center;
+padding-top: 25px;
+border: 2px solid gray;
+height: 250px;
+width: 650px;
+border-radius: 50px;
+}
+
+.tools {
+text-align: center;
 padding-top: 25px;
 border: 2px solid gray;
 height: 250px;
