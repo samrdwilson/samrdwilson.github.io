@@ -143,5 +143,5 @@ else if ( event.key == "Backspace" ) {
   let paper =  document.getElementById("paper");
   let length = paper.innerHTML.length;
   paper.innerHTML = paper.innerHTML.substr(0, length-1);
-  });
-}
+  }
+});
