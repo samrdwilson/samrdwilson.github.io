@@ -146,6 +146,5 @@ else if ( event.key == "Backspace" ) {
         paper.innerHTML = paper.innerHTML.substr(0, length-1);
 }
 
-});
 
 
