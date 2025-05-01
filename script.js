@@ -135,17 +135,33 @@ else if ( event.key == "Backspace" ) {
 
 
 
-save()
-clear()
-bold()
-    italic()
-underline()
-    strikethrough()
- uppercase()
-lowercase()
-titlecase()
- increaseFontSize()
-decreaseFontSize()
-leftAlign()
-centerAlign()
-leftAlign()
+function save() {
+}
+function clear() {
+}
+
+function bold() {
+document.getElementById("").style.font = "bold";
+}
+function italic() {
+}
+function underline() {
+}
+function strikethrough() {
+}
+function uppercase() {
+}
+function lowercase() {
+}
+function titlecase() {
+}
+function increaseFontSize() {
+}
+function decreaseFontSize() {
+}
+function leftAlign() {
+}
+function centerAlign() {
+}
+function leftAlign(){
+}
