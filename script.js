@@ -141,11 +141,13 @@ function clear() {
 }
 
 function bold() {
-document.getElementById("").style.font = "bold";
+document.getElementById("paper").style.font-weight = "bold";
 }
 function italic() {
+document.getElementById("paper").style.font = "bold";
 }
 function underline() {
+document.getElementById("paper").style.font = "bold";
 }
 function strikethrough() {
 }
