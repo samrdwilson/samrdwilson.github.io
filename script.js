@@ -136,34 +136,79 @@ else if ( event.key == "Backspace" ) {
 
 
 function save() {
+         let element = document.createElement('a');
+            element.setAttribute('href',
+                'data:text/plain;charset=utf-8, '
+                + encodeURIComponent(text));
+            element.setAttribute('download', file);
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+        document.getElementById("btn")
+            .addEventListener("click", function () {
+                let text =
+                    document.getElementById("paper").value;
+                let filename = "paper.txt";
+                download(filename, text);
+            }, false);
 }
 function clear() {
+         document.getElementById("paper") = " ";
 }
-
 function bold() {
-document.getElementById("paper").style.font-weight = "bold";
+        document.getElementById("paper") = "<b>";
 }
 function italic() {
-document.getElementById("paper").style.font = "bold";
+        document.getElementById("paper") = "<i>";
 }
 function underline() {
-document.getElementById("paper").style.font = "bold";
+        var paperu = document.getElementById("paper");
+        paperu.style.textDecoration = "underline";
 }
 function strikethrough() {
+        var papers = document.getElementById("paper");
+        papers.style.textDecoration = "line-through";
 }
 function uppercase() {
+        document.getElementById("paper");
+        paper.textContent = paper.textContent.toUpperCase();
 }
 function lowercase() {
+        document.getElementById("paper");
+        paper.textContent = paper.textContent.toLowerCase();
 }
 function titlecase() {
+public static String toTitleCase(String input) {
+        String[] words = input.toLowerCase().split("\\s+");
+        StringBuilder titleCase = new StringBuilder();
+
+        for (String word : words) {
+            if (word.length() > 0) {
+                titleCase.append(Character.toUpperCase(word.charAt(0)))
+                         .append(word.substring(1))
+                         .append(" ");
+            }
+        }
+        return titleCase.toString().trim();
 }
 function increaseFontSize() {
+        document.getElementById("paper");
+        paper.style.font = "+10";
 }
 function decreaseFontSize() {
+        document.getElementById("paper");
+        paper.style.font = "-10";
 }
 function leftAlign() {
+        document.getElementById("paper");
+        paper.style.align = "left";
 }
 function centerAlign() {
+        document.getElementById("paper");
+        paper.style.align = "center";
 }
 function leftAlign(){
+        document.getElementById("paper");
+        paper.style.align = "right";
 }
