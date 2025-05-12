@@ -147,16 +147,17 @@ function save() {
     element.click();
     document.body.removeChild(element);
 }
+
 document.getElementById("btn").addEventListener("click", save);
 
 function clear() {
-         document.getElementById("paper") = " ";
+         document.getElementById("paper").innerHTML = " ";
 }
 function bold() {
-        document.getElementById("paper") = "<b>";
+        document.getElementById("paper").style.fontWeight = "bold";
 }
 function italic() {
-        document.getElementById("paper") = "<i>";
+        document.getElementById("paper").style.fontStyle = "italic";
 }
 function underline() {
         var paperu = document.getElementById("paper");
@@ -167,16 +168,20 @@ function strikethrough() {
         papers.style.textDecoration = "line-through";
 }
 function uppercase() {
-        document.getElementById("paper");
-        paper.textContent = paper.textContent.toUpperCase();
+        let paper = document.getElementById("paper");
+        paper.innerText = paper.innerText.toUpperCase();
 }
 function lowercase() {
-        document.getElementById("paper");
-        paper.textContent = paper.textContent.toLowerCase();
+        let paper = document.getElementById("paper");
+        paper.innerText = paper.innerText.toLowerCase();
 }
 function titlecase() {
-        document.getElementById("paper");
-        paper.style.textTransform = paper.textTransform = "capitalize";
+        let paper = document.getElementById("paper");
+        paper.innerText = paper.innerText
+        .toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
 }
 function increaseFontSize() {
         document.getElementById("paper");
@@ -194,7 +199,7 @@ function centerAlign() {
         document.getElementById("paper");
         paper.style.align = "center";
 }
-function leftAlign(){
+function rightAlign(){
         document.getElementById("paper");
         paper.style.align = "right";
 }
