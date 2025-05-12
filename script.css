@@ -1,8 +1,8 @@
 body {
 text-align: center;
 background-color: black;
-color: white;
-font-family: courier new;
+color: green;
+font-family: "Courier New", Courier, monospace;
 }
 
 #paper {
@@ -12,12 +12,17 @@ width: 650px;
 height: 600px;
 font-size: 20px;
 border-radius: 100px;
-overflow: hidden;
-font-family: courier new;
+font-family: "Courier New", Courier, monospace;
 color: white;
 background-color: black;
 padding-top: 25px;
+overflow-y: auto;
+overflow-x: hidden;
+padding: 25px;
+box-sizing: border-box;
+line-height: 1.4;
 }
+
 
 button {
 border-radius: 30px;
@@ -25,7 +30,8 @@ color: white;
 background-color: black;
 height: 50px;
 width: 50px;
-font-family: courier new;
+font-family: "Courier New", Courier, monospace;
+margin: 4px;
 }
 
 
@@ -47,4 +53,9 @@ width: 650px;
 border-radius: 50px;
 }
 
+button:hover {
+  background-color: #222;
+  border: 1px solid white;
+  cursor: pointer;
+}
 
