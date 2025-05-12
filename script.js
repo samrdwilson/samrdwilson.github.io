@@ -179,18 +179,8 @@ function lowercase() {
         paper.textContent = paper.textContent.toLowerCase();
 }
 function titlecase() {
-public static String toTitleCase(String input) {
-        String[] words = input.toLowerCase().split("\\s+");
-        StringBuilder titleCase = new StringBuilder();
-
-        for (String word : words) {
-            if (word.length() > 0) {
-                titleCase.append(Character.toUpperCase(word.charAt(0)))
-                         .append(word.substring(1))
-                         .append(" ");
-            }
-        }
-        return titleCase.toString().trim();
+        document.getElementById("paper");
+        paper.style.textTransform = paper.textTransform = "capitalize";
 }
 function increaseFontSize() {
         document.getElementById("paper");
