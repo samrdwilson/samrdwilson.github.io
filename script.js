@@ -152,7 +152,7 @@ function save() {
                 let filename = "paper.txt";
                 download(filename, text);
             }, false);
-}
+
 function clear() {
          document.getElementById("paper") = " ";
 }
