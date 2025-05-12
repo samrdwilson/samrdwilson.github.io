@@ -136,22 +136,18 @@ else if ( event.key == "Backspace" ) {
 
 
 function save() {
-         let element = document.createElement('a');
-            element.setAttribute('href',
-                'data:text/plain;charset=utf-8, '
-                + encodeURIComponent(text));
-            element.setAttribute('download', file);
-            document.body.appendChild(element);
-            element.click();
-            document.body.removeChild(element);
-        }
-        document.getElementById("btn")
-            .addEventListener("click", function () {
-                let text =
-                    document.getElementById("paper").value;
-                let filename = "paper.txt";
-                download(filename, text);
-            }, false);
+    let paper = document.getElementById("paper");
+    let text = paper.innerText || paper.textContent;
+    let filename = "paper.txt";
+
+    let element = document.createElement("a");
+    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+    element.setAttribute("download", filename);
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+}
+document.getElementById("btn").addEventListener("click", save);
 
 function clear() {
          document.getElementById("paper") = " ";
