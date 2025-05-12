@@ -151,7 +151,7 @@ function save() {
 document.getElementById("btn").addEventListener("click", save);
 
 function clear() {
-         document.getElementById("paper").innerHTML = " ";
+         document.getElementById("paper").innerHTML = "";
 }
 function bold() {
         document.getElementById("paper").style.fontWeight = "bold";
@@ -184,22 +184,29 @@ function titlecase() {
         .join(' ');
 }
 function increaseFontSize() {
-        document.getElementById("paper");
-        paper.style.font = "+10";
+        let paper = document.getElementById("paper");
+        paper.style.fontSize = "larger";
 }
 function decreaseFontSize() {
-        document.getElementById("paper");
-        paper.style.font = "-10";
+        let paper = document.getElementById("paper");
+        paper.style.fontSize = "smaller";
 }
 function leftAlign() {
-        document.getElementById("paper");
-        paper.style.align = "left";
+       let paper = document.getElementById("paper");
+        paper.style.textAlign = "left";
 }
 function centerAlign() {
-        document.getElementById("paper");
-        paper.style.align = "center";
+        let paper = document.getElementById("paper");
+        paper.style.textAlign = "center";
 }
 function rightAlign(){
-        document.getElementById("paper");
-        paper.style.align = "right";
+        let paper = document.getElementById("paper");
+        paper.style.textAlign = "right";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    let btn = document.getElementById("btn");
+    if (btn) {
+        btn.addEventListener("click", save);
+    }
+});
