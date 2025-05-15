@@ -1,7 +1,7 @@
 body {
 text-align: center;
 background-color: black;
-color: green;
+color: "#05e32d";
 font-family: "Courier New", Courier, monospace;
 }
 
@@ -13,7 +13,7 @@ height: 700px;
 font-size: 20px;
 border-radius: 100px;
 font-family: "Courier New", Courier, monospace;
-color: green;
+color: "#05e32d";
 background-color: black;
 padding-top: 25px;
 overflow-y: auto;
@@ -27,7 +27,7 @@ line-height: 1.4;
 button {
 text-align: center;
 border-radius: 30px;
-color: green;
+color: "#05e32d";
 background-color: black;
 height: 50px;
 width: 50px;
@@ -43,7 +43,7 @@ border: 2px solid gray;
 height: 350px;
 width: 750px;
 border-radius: 50px;
-color: green;
+color: "#05e32d";
 }
 
 .tools {
@@ -53,7 +53,7 @@ border: 2px solid gray;
 height: 350px;
 width: 750px;
 border-radius: 50px;
-color: green;
+color: "#05e32d";
 }
 
 button:hover {
