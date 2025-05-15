@@ -8,12 +8,12 @@ font-family: "Courier New", Courier, monospace;
 #paper {
 text-align: center;
 border: 2px solid grey;
-width: 650px;
-height: 600px;
+width: 750px;
+height: 700px;
 font-size: 20px;
 border-radius: 100px;
 font-family: "Courier New", Courier, monospace;
-color: white;
+color: green;
 background-color: black;
 padding-top: 25px;
 overflow-y: auto;
@@ -25,8 +25,9 @@ line-height: 1.4;
 
 
 button {
+text-align: center;
 border-radius: 30px;
-color: white;
+color: green;
 background-color: black;
 height: 50px;
 width: 50px;
@@ -39,8 +40,8 @@ margin: 4px;
 text-align: center;
 padding-top: 25px;
 border: 2px solid gray;
-height: 250px;
-width: 650px;
+height: 450px;
+width: 750px;
 border-radius: 50px;
 }
 
@@ -48,14 +49,14 @@ border-radius: 50px;
 text-align: center;
 padding-top: 25px;
 border: 2px solid gray;
-height: 250px;
-width: 650px;
+height: 450px;
+width: 750px;
 border-radius: 50px;
 }
 
 button:hover {
   background-color: #222;
-  border: 1px solid white;
+  border: 2px solid light green;
   cursor: pointer;
 }
 
