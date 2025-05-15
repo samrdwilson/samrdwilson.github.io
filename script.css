@@ -40,7 +40,7 @@ margin: 4px;
 text-align: center;
 padding-top: 25px;
 border: 2px solid gray;
-height: 450px;
+height: 350px;
 width: 750px;
 border-radius: 50px;
 color: green;
@@ -50,7 +50,7 @@ color: green;
 text-align: center;
 padding-top: 25px;
 border: 2px solid gray;
-height: 450px;
+height: 350px;
 width: 750px;
 border-radius: 50px;
 color: green;
@@ -58,7 +58,7 @@ color: green;
 
 button:hover {
   background-color: #222;
-  border: 2px solid light green;
+  border: 2px solid white;
   cursor: pointer;
 }
 
