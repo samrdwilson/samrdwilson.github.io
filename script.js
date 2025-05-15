@@ -117,6 +117,9 @@ function m() {
 
 
 document.addEventListener('keydown', function(event) {
+if (event.keyCode == 32) {
+        event.preventDefault();
+}
 let paper = document.getElementById("paper");
 if (event.key.length == 1) {
   paper.innerHTML += event.key;
